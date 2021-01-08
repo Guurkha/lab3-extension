@@ -58,6 +58,7 @@ int main()
     macierz2.print(); 
     cout << "macierz 3:" << endl;
     macierz3.print(); 
+    cout << "proba" << endl;
 
     //--------wypelnienie macierzy----//
     try{

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/proco/cppprojects/lab3-excpetions/src/main.cpp" "C:/Users/proco/cppprojects/lab3-excpetions/build/CMakeFiles/output.dir/src/main.cpp.obj"
-  "C:/Users/proco/cppprojects/lab3-excpetions/src/matrix.cpp" "C:/Users/proco/cppprojects/lab3-excpetions/build/CMakeFiles/output.dir/src/matrix.cpp.obj"
+  "C:/Users/proco/cppprojects/lab5/lab3-extension/src/main.cpp" "C:/Users/proco/cppprojects/lab5/lab3-extension/build/CMakeFiles/output.dir/src/main.cpp.obj"
+  "C:/Users/proco/cppprojects/lab5/lab3-extension/src/matrix.cpp" "C:/Users/proco/cppprojects/lab5/lab3-extension/build/CMakeFiles/output.dir/src/matrix.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

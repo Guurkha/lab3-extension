@@ -61,10 +61,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\proco\cppprojects\lab3-excpetions
+CMAKE_SOURCE_DIR = C:\Users\proco\cppprojects\lab5\lab3-extension
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\proco\cppprojects\lab3-excpetions\build
+CMAKE_BINARY_DIR = C:\Users\proco\cppprojects\lab5\lab3-extension\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/output.dir/depend.make
@@ -78,30 +78,30 @@ include CMakeFiles/output.dir/flags.make
 CMakeFiles/output.dir/src/main.cpp.obj: CMakeFiles/output.dir/flags.make
 CMakeFiles/output.dir/src/main.cpp.obj: CMakeFiles/output.dir/includes_CXX.rsp
 CMakeFiles/output.dir/src/main.cpp.obj: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\proco\cppprojects\lab3-excpetions\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/output.dir/src/main.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\output.dir\src\main.cpp.obj -c C:\Users\proco\cppprojects\lab3-excpetions\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\proco\cppprojects\lab5\lab3-extension\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/output.dir/src/main.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\output.dir\src\main.cpp.obj -c C:\Users\proco\cppprojects\lab5\lab3-extension\src\main.cpp
 
 CMakeFiles/output.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/output.dir/src/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\proco\cppprojects\lab3-excpetions\src\main.cpp > CMakeFiles\output.dir\src\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\proco\cppprojects\lab5\lab3-extension\src\main.cpp > CMakeFiles\output.dir\src\main.cpp.i
 
 CMakeFiles/output.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/output.dir/src/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\proco\cppprojects\lab3-excpetions\src\main.cpp -o CMakeFiles\output.dir\src\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\proco\cppprojects\lab5\lab3-extension\src\main.cpp -o CMakeFiles\output.dir\src\main.cpp.s
 
 CMakeFiles/output.dir/src/matrix.cpp.obj: CMakeFiles/output.dir/flags.make
 CMakeFiles/output.dir/src/matrix.cpp.obj: CMakeFiles/output.dir/includes_CXX.rsp
 CMakeFiles/output.dir/src/matrix.cpp.obj: ../src/matrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\proco\cppprojects\lab3-excpetions\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/output.dir/src/matrix.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\output.dir\src\matrix.cpp.obj -c C:\Users\proco\cppprojects\lab3-excpetions\src\matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\proco\cppprojects\lab5\lab3-extension\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/output.dir/src/matrix.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\output.dir\src\matrix.cpp.obj -c C:\Users\proco\cppprojects\lab5\lab3-extension\src\matrix.cpp
 
 CMakeFiles/output.dir/src/matrix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/output.dir/src/matrix.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\proco\cppprojects\lab3-excpetions\src\matrix.cpp > CMakeFiles\output.dir\src\matrix.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\proco\cppprojects\lab5\lab3-extension\src\matrix.cpp > CMakeFiles\output.dir\src\matrix.cpp.i
 
 CMakeFiles/output.dir/src/matrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/output.dir/src/matrix.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\proco\cppprojects\lab3-excpetions\src\matrix.cpp -o CMakeFiles\output.dir\src\matrix.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\proco\cppprojects\lab5\lab3-extension\src\matrix.cpp -o CMakeFiles\output.dir\src\matrix.cpp.s
 
 # Object files for target output
 output_OBJECTS = \
@@ -117,7 +117,7 @@ output.exe: CMakeFiles/output.dir/build.make
 output.exe: CMakeFiles/output.dir/linklibs.rsp
 output.exe: CMakeFiles/output.dir/objects1.rsp
 output.exe: CMakeFiles/output.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\proco\cppprojects\lab3-excpetions\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable output.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\proco\cppprojects\lab5\lab3-extension\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable output.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\output.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -130,6 +130,6 @@ CMakeFiles/output.dir/clean:
 .PHONY : CMakeFiles/output.dir/clean
 
 CMakeFiles/output.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\proco\cppprojects\lab3-excpetions C:\Users\proco\cppprojects\lab3-excpetions C:\Users\proco\cppprojects\lab3-excpetions\build C:\Users\proco\cppprojects\lab3-excpetions\build C:\Users\proco\cppprojects\lab3-excpetions\build\CMakeFiles\output.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\proco\cppprojects\lab5\lab3-extension C:\Users\proco\cppprojects\lab5\lab3-extension C:\Users\proco\cppprojects\lab5\lab3-extension\build C:\Users\proco\cppprojects\lab5\lab3-extension\build C:\Users\proco\cppprojects\lab5\lab3-extension\build\CMakeFiles\output.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/output.dir/depend
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/proco/cppprojects/lab3-excpetions/include/lab4/matrix.hpp
+C:/Users/proco/cppprojects/lab5/lab3-extension/include/lab4/matrix.hpp
 iostream
 -
 vector
@@ -20,11 +20,11 @@ iomanip
 exception
 -
 
-C:/Users/proco/cppprojects/lab3-excpetions/src/main.cpp
+C:/Users/proco/cppprojects/lab5/lab3-extension/src/main.cpp
 ../include/lab4/matrix.hpp
-C:/Users/proco/cppprojects/lab3-excpetions/include/lab4/matrix.hpp
+C:/Users/proco/cppprojects/lab5/lab3-extension/include/lab4/matrix.hpp
 
-C:/Users/proco/cppprojects/lab3-excpetions/src/matrix.cpp
+C:/Users/proco/cppprojects/lab5/lab3-extension/src/matrix.cpp
 ../include/lab4/matrix.hpp
-C:/Users/proco/cppprojects/lab3-excpetions/include/lab4/matrix.hpp
+C:/Users/proco/cppprojects/lab5/lab3-extension/include/lab4/matrix.hpp
 
