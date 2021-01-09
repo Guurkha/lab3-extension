@@ -23,11 +23,15 @@ class labmatrix
     int col();
     void set(int n, int m, double val) noexcept(false);
     double get(int n, int m) noexcept(false);
-    labmatrix add(labmatrix m2) noexcept(false);
-    labmatrix substract(labmatrix m2) noexcept(false);
-    labmatrix multiply(labmatrix m2) noexcept(false);
+   //labmatrix add(labmatrix m2) noexcept(false);
+    //labmatrix substract(labmatrix m2) noexcept(false);
+    //labmatrix multiply(labmatrix m2) noexcept(false);
     bool store(string filename, string path) noexcept(false);
     labmatrix(string filename) noexcept(false);
+    labmatrix* operator + (labmatrix&);
+    labmatrix* operator - (labmatrix&);
+    labmatrix* operator * (labmatrix&);
+    bool operator==(labmatrix&);
 
 };
 

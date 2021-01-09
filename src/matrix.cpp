@@ -56,7 +56,7 @@ void labmatrix::print()
         cout << endl;
     }
 }
-
+/*
 labmatrix labmatrix::add(labmatrix m2) noexcept(false)
 {
     int a = row();
@@ -75,7 +75,7 @@ labmatrix labmatrix::add(labmatrix m2) noexcept(false)
     }
     return matrix3;
 }
-
+*/
 void labmatrix::set(int n, int m, double val) noexcept(false)
 {
     if (n < row() && n >= 0 && m < col() && m >= 0)
@@ -96,7 +96,7 @@ double labmatrix::get(int n, int m) noexcept(false)
     //return matrix.at(n).at(m);
 
 }
-
+/*
 labmatrix labmatrix::substract(labmatrix m2) noexcept(false)
 {
     int a = row();
@@ -142,7 +142,7 @@ labmatrix labmatrix::multiply(labmatrix m2) noexcept(false)
     }
     return matrix3;
 }
-
+*/
 bool labmatrix::store(string filename, string path) noexcept(false)
 {
     fstream mojplik;
@@ -212,4 +212,88 @@ labmatrix::labmatrix(string filename) noexcept(false)
     cout << "b to " << b << endl;
     
 
+}
+
+labmatrix *labmatrix::operator+(labmatrix &add)
+{
+    int a = this->row();
+    int b = this->col();
+    if( ! (a == add.col() ) && (b == add.col() ) )
+    {
+        throw My_Exception_mathematical_operations();
+    }
+    labmatrix matrix3(a, b);
+    for(int i = 0; i < row(); i++)
+    {
+        for(int j = 0; j < col(); j++)
+        {
+            (matrix3.matrix)[i][j] = this->matrix[i][j] + (add.matrix)[i][j];
+        }
+    }
+    return &matrix3;
+}
+
+labmatrix *labmatrix::operator-(labmatrix &add)
+{
+    int a = this->row();
+    int b = this->col();
+    if( ! (a == add.col() ) && (b == add.col() ) )
+    {
+        throw My_Exception_mathematical_operations();
+    }
+    labmatrix matrix3(a, b);
+    for(int i = 0; i < row(); i++)
+    {
+        for(int j = 0; j < col(); j++)
+        {
+            (matrix3.matrix)[i][j] = this->matrix[i][j] - (add.matrix)[i][j];
+        }
+    }
+    return &matrix3;
+}
+
+labmatrix *labmatrix::operator*(labmatrix &add)
+{
+    int a = row();
+    int b = col();
+    if(!(a == this->row()))
+    {
+        throw My_Exception_mathematical_operations();
+    }
+    double value = 0;
+    labmatrix matrix3(a, b);
+    for(int i = 0; i < row(); i++)
+    {
+        for(int j = 0; j < col(); j++)
+        {
+            value = 0;
+            for(int k = 0; k < row(); k++)
+            {
+               value = value + this->matrix[i][k] * (add.matrix)[k][j];
+            }
+            (matrix3.matrix)[i][j] = value;
+        }
+    }
+    return &matrix3;  
+}
+
+bool labmatrix::operator==(labmatrix &second)
+{
+    int a = row();
+    int b = col();
+    if(a != second.row() || b != second.col())
+    {
+        throw My_Exception_mathematical_operations();
+    }
+    for(int i = 0; i < a; i++)
+    {
+        for(int j = 0; j < b; j++)
+        {
+            if(this->get(i, j) != second.get(i, j))
+            {
+                return false;
+            }
+        }
+    }
+    return true;
 }

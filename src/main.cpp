@@ -95,9 +95,11 @@ int main()
         cout << e.what() << endl;
     }
     
-
+    cout << "macierz 1:" << endl;
     macierz.print();
+    cout << "macierz 2:" << endl;
     macierz2.print();
+    cout << "macierz 3:" << endl;
     macierz3.print();
         //z pliku
     try
@@ -116,18 +118,27 @@ int main()
     try{
     cout << "---------" << endl;
     cout << "dodawanie" << endl;
-    macierz2 = macierz2.add(macierz3);
+    macierz2 + macierz3;
     macierz2.print();
         //matrix odejmowanie
     cout << "---------" << endl;
     cout << "odejmowanie" << endl;
-    macierz2 = macierz2.substract(macierz3);
+    macierz2 - macierz3;
     macierz2.print();
         //matrix mnozenie
     cout << "---------" << endl;
     cout << "mnozenie" << endl;
-    macierz2 = macierz2.multiply(macierz3);
+    macierz2 * macierz3;
     macierz2.print();
+    if(macierz == macierz2)
+    {
+        cout << "macierze sa takie same" << endl;
+    }
+    else
+    {
+        cout << "macierze nie sa takie same" << endl;
+    }
+    
     }
     catch(exception &e)
     {
@@ -145,6 +156,5 @@ int main()
         cout << e.what() << endl;
     }
 
-    
     return 0;
 }
