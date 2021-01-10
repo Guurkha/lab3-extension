@@ -297,6 +297,7 @@ bool labmatrix::operator==(labmatrix &second)
     }
     return true;
 }
+
 vector<double> labmatrix::operator[](int a)
 {
     if(a >= this->row() || a < 0) 
@@ -309,3 +310,64 @@ vector<double> labmatrix::operator[](int a)
     }
     
 }
+
+ostream& operator << (ostream& os, labmatrix& dt)
+{
+    int a = dt.row();
+    int b = dt.col();
+    os << a << " " << b << endl;
+    for(int i = 0; i < a; i++)
+    {
+        for(int j = 0; j < b; j++)
+        {
+            os << dt[i][j];
+            os << " ";
+        }
+        os << endl;
+    }
+    return os;
+}
+
+labmatrix* labmatrix::operator++()
+{
+    for(int i = 0; i < this->row(); i++)
+    {
+        for(int j = 0; j < this->col(); j++)
+        {
+            this->set(i, j, (1+get(i,j)));
+        }
+    }
+}
+
+labmatrix* labmatrix::operator--()
+{
+    for(int i = 0; i < this->row(); i++)
+    {
+        for(int j = 0; j < this->col(); j++)
+        {
+            this->set(i, j, (get(i,j)-1));
+        }
+    }
+}
+
+bool labmatrix::operator!=(labmatrix &second)
+{
+    int a = row();
+    int b = col();
+    if(a != second.row() || b != second.col())
+    {
+        throw My_Exception_mathematical_operations();
+    }
+    for(int i = 0; i < a; i++)
+    {
+        for(int j = 0; j < b; j++)
+        {
+            if(this->get(i, j) == second.get(i, j))
+            {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+

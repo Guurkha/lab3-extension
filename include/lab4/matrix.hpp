@@ -33,6 +33,10 @@ class labmatrix
     labmatrix* operator * (labmatrix&);
     bool operator==(labmatrix&);
     vector<double> operator[](int a);
+    friend ostream& operator << (ostream& os, labmatrix&);
+    labmatrix* operator ++ (); //prefix incrementator
+    labmatrix* operator -- (); //prefix decrementator 
+    bool operator!=(labmatrix&);
 
 };
 

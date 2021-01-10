@@ -114,38 +114,42 @@ int main()
 
 
     //------add, subtract, multiply-------//
-        //matrix dodawanie
+        //matrix dodawanie - test operatora
     try{
     cout << "---------" << endl;
     cout << "dodawanie" << endl;
     macierz2 + macierz3;
     macierz2.print();
-        //matrix odejmowanie
+    //-------------------------------
+        //matrix odejmowanie - test operatora
     cout << "---------" << endl;
     cout << "odejmowanie" << endl;
     macierz2 - macierz3;
     macierz2.print();
-        //matrix mnozenie
+    //---------------------------------
+        //matrix mnozenie - test operatora
     cout << "---------" << endl;
     cout << "mnozenie" << endl;
     macierz2 * macierz3;
     macierz2.print();
-    if(macierz == macierz2)
-    {
-        cout << "macierze sa takie same" << endl;
-    }
-    else
-    {
-        cout << "macierze nie sa takie same" << endl;
-    }
+    //---------
     
+        //test operatora ==
+    if(macierz == macierz2)
+        cout << "macierze sa takie same" << endl;
+        //test operatora !=
+    if(macierz != macierz2)
+        cout << "macierze nie sa takie same" << endl;
     }
     catch(exception &e)
     {
         cout << e.what() << endl;
     }
-
+    //-------------------------
+    
     //operator []
+    try
+    {
     vector<double> temp;
     temp = macierz2[1];
     for(int i = 0; i < macierz2.col(); i++)
@@ -153,7 +157,25 @@ int main()
         cout << temp[i] << "  ";
     }
     cout << endl;
-    //----------------------- 
+    }
+    catch(exception &e)
+    {
+        cout << e.what() << endl;
+    }
+    //--------proba operatora << -------------
+    cout << "wypisanie macierzy 2 z operatorem" << endl;
+    cout << macierz2;
+    //-------------------------------------
+    //--------proba operatora ++ ----------
+    cout << "proba ++" << endl;
+    ++macierz2;
+    macierz2.print();
+    //-------------------------------------
+    //--------proba operatora -- ----------
+    cout << "proba --" << endl;
+    macierz2;
+    macierz2.print();
+    //-------------------------------------
 
     //--------test  funkcji store-------//
     try
