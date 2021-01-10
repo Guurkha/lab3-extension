@@ -144,7 +144,16 @@ int main()
     {
         cout << e.what() << endl;
     }
-    
+
+    //operator []
+    vector<double> temp;
+    temp = macierz2[1];
+    for(int i = 0; i < macierz2.col(); i++)
+    {
+        cout << temp[i] << "  ";
+    }
+    cout << endl;
+    //----------------------- 
 
     //--------test  funkcji store-------//
     try

@@ -297,3 +297,15 @@ bool labmatrix::operator==(labmatrix &second)
     }
     return true;
 }
+vector<double> labmatrix::operator[](int a)
+{
+    if(a >= this->row() || a < 0) 
+    {
+        throw My_Exception_mathematical_operations();
+    } 
+    else
+    {
+        return this->matrix[a];
+    }
+    
+}

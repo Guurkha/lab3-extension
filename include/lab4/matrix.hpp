@@ -32,6 +32,7 @@ class labmatrix
     labmatrix* operator - (labmatrix&);
     labmatrix* operator * (labmatrix&);
     bool operator==(labmatrix&);
+    vector<double> operator[](int a);
 
 };
 
