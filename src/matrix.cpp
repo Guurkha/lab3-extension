@@ -56,26 +56,7 @@ void labmatrix::print()
         cout << endl;
     }
 }
-/*
-labmatrix labmatrix::add(labmatrix m2) noexcept(false)
-{
-    int a = row();
-    int b = col();
-    if( ! (a == m2.col() ) && (b == m2.col() ) )
-    {
-        throw My_Exception_mathematical_operations();
-    }
-    labmatrix matrix3(a, b);
-    for(int i = 0; i < row(); i++)
-    {
-        for(int j = 0; j < col(); j++)
-        {
-            (matrix3.matrix)[i][j] = matrix[i][j] + (m2.matrix)[i][j];
-        }
-    }
-    return matrix3;
-}
-*/
+
 void labmatrix::set(int n, int m, double val) noexcept(false)
 {
     if (n < row() && n >= 0 && m < col() && m >= 0)
@@ -96,53 +77,7 @@ double labmatrix::get(int n, int m) noexcept(false)
     //return matrix.at(n).at(m);
 
 }
-/*
-labmatrix labmatrix::substract(labmatrix m2) noexcept(false)
-{
-    int a = row();
-    int b = col();
 
-    if( ! (a == m2.col() ) && (b == m2.col() ) )
-    {
-        throw My_Exception_mathematical_operations();
-    }
-
-    labmatrix matrix3(a, b);
-    for(int i = 0; i < row(); i++)
-    {
-        for(int j = 0; j < col(); j++)
-        {
-            (matrix3.matrix)[i][j] = matrix[i][j] - (m2.matrix)[i][j];
-        }
-    }
-    return matrix3;    
-}
-
-labmatrix labmatrix::multiply(labmatrix m2) noexcept(false)
-{
-    int a = row();
-    int b = col();
-    if(!(a == m2.row()))
-    {
-        throw My_Exception_mathematical_operations();
-    }
-    double value = 0;
-    labmatrix matrix3(a, b);
-    for(int i = 0; i < row(); i++)
-    {
-        for(int j = 0; j < col(); j++)
-        {
-            value = 0;
-            for(int k = 0; k < row(); k++)
-            {
-               value = value + matrix[i][k] * (m2.matrix)[k][j];
-            }
-            (matrix3.matrix)[i][j] = value;
-        }
-    }
-    return matrix3;
-}
-*/
 bool labmatrix::store(string filename, string path) noexcept(false)
 {
     fstream mojplik;
@@ -371,3 +306,70 @@ bool labmatrix::operator!=(labmatrix &second)
     return true;
 }
 
+/*
+labmatrix labmatrix::substract(labmatrix m2) noexcept(false)
+{
+    int a = row();
+    int b = col();
+
+    if( ! (a == m2.col() ) && (b == m2.col() ) )
+    {
+        throw My_Exception_mathematical_operations();
+    }
+
+    labmatrix matrix3(a, b);
+    for(int i = 0; i < row(); i++)
+    {
+        for(int j = 0; j < col(); j++)
+        {
+            (matrix3.matrix)[i][j] = matrix[i][j] - (m2.matrix)[i][j];
+        }
+    }
+    return matrix3;    
+}
+
+labmatrix labmatrix::multiply(labmatrix m2) noexcept(false)
+{
+    int a = row();
+    int b = col();
+    if(!(a == m2.row()))
+    {
+        throw My_Exception_mathematical_operations();
+    }
+    double value = 0;
+    labmatrix matrix3(a, b);
+    for(int i = 0; i < row(); i++)
+    {
+        for(int j = 0; j < col(); j++)
+        {
+            value = 0;
+            for(int k = 0; k < row(); k++)
+            {
+               value = value + matrix[i][k] * (m2.matrix)[k][j];
+            }
+            (matrix3.matrix)[i][j] = value;
+        }
+    }
+    return matrix3;
+}
+*/
+/*
+labmatrix labmatrix::add(labmatrix m2) noexcept(false)
+{
+    int a = row();
+    int b = col();
+    if( ! (a == m2.col() ) && (b == m2.col() ) )
+    {
+        throw My_Exception_mathematical_operations();
+    }
+    labmatrix matrix3(a, b);
+    for(int i = 0; i < row(); i++)
+    {
+        for(int j = 0; j < col(); j++)
+        {
+            (matrix3.matrix)[i][j] = matrix[i][j] + (m2.matrix)[i][j];
+        }
+    }
+    return matrix3;
+}
+*/
