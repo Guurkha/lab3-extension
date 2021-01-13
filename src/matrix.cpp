@@ -297,13 +297,13 @@ bool labmatrix::operator!=(labmatrix &second)
     {
         for(int j = 0; j < b; j++)
         {
-            if(this->get(i, j) == second.get(i, j))
+            if(this->get(i, j) != second.get(i, j))
             {
-                return false;
+                return true;
             }
         }
     }
-    return true;
+    return false;
 }
 
 /*
