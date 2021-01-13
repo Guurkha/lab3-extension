@@ -72,20 +72,20 @@ int main()
     try{
     cout << "---------" << endl;
     cout << "dodawanie" << endl;
-    macierz2 + macierz3;
-    macierz2.print();
+    labmatrix added = macierz2 + macierz3;
+    added.print();
     //-------------------------------
         //matrix odejmowanie - test operatora
     cout << "---------" << endl;
     cout << "odejmowanie" << endl;
-    macierz2 - macierz3;
-    macierz2.print();
+    labmatrix subbed = macierz2 - macierz3;
+    subbed.print();
     //---------------------------------
         //matrix mnozenie - test operatora
     cout << "---------" << endl;
     cout << "mnozenie" << endl;
-    macierz2 * macierz3;
-    macierz2.print();
+    labmatrix multiplied = macierz2 * macierz3;
+    multiplied.print();
     //---------
     
 
@@ -131,7 +131,7 @@ int main()
     //-------------------------------------
     //--------proba operatora -- ----------
     cout << "proba --" << endl;
-    macierz2;
+    --macierz2;
     macierz2.print();
     //-------------------------------------
 

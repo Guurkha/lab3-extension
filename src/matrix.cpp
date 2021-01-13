@@ -149,7 +149,7 @@ labmatrix::labmatrix(string filename) noexcept(false)
 
 }
 
-labmatrix *labmatrix::operator+(labmatrix &add)
+labmatrix labmatrix::operator+(labmatrix &add)
 {
     int a = this->row();
     int b = this->col();
@@ -165,10 +165,10 @@ labmatrix *labmatrix::operator+(labmatrix &add)
             (matrix3.matrix)[i][j] = this->matrix[i][j] + (add.matrix)[i][j];
         }
     }
-    return &matrix3;
+    return matrix3;
 }
 
-labmatrix *labmatrix::operator-(labmatrix &add)
+labmatrix labmatrix::operator-(labmatrix &add)
 {
     int a = this->row();
     int b = this->col();
@@ -184,10 +184,10 @@ labmatrix *labmatrix::operator-(labmatrix &add)
             (matrix3.matrix)[i][j] = this->matrix[i][j] - (add.matrix)[i][j];
         }
     }
-    return &matrix3;
+    return matrix3;
 }
 
-labmatrix *labmatrix::operator*(labmatrix &add)
+labmatrix labmatrix::operator*(labmatrix &add)
 {
     int a = row();
     int b = col();
@@ -209,7 +209,7 @@ labmatrix *labmatrix::operator*(labmatrix &add)
             (matrix3.matrix)[i][j] = value;
         }
     }
-    return &matrix3;  
+    return matrix3;  
 }
 
 bool labmatrix::operator==(labmatrix &second)

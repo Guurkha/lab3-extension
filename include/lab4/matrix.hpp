@@ -28,9 +28,9 @@ class labmatrix
     //labmatrix multiply(labmatrix m2) noexcept(false);
     bool store(string filename, string path) noexcept(false);
     labmatrix(string filename) noexcept(false);
-    labmatrix* operator + (labmatrix&);
-    labmatrix* operator - (labmatrix&);
-    labmatrix* operator * (labmatrix&);
+    labmatrix operator + (labmatrix&);
+    labmatrix operator - (labmatrix&);
+    labmatrix operator * (labmatrix&);
     bool operator==(labmatrix&);
     vector<double> operator[](int a);
     friend ostream& operator << (ostream& os, labmatrix&);
